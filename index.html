@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>WABADUL BALDUALALA</title>
+
+<!--  comments suavão  -->
+
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100");
+html, body, h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#app {
+  background: #0a0a0a;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url("");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+.sub {
+  color: #64dcdc;
+  letter-spacing: 1em;
+}
+
+/* Our mixin positions a copy of our text
+directly on our existing text, while
+also setting content to the appropriate
+text set in the data-text attribute. */
+.kaio {
+  position: relative;
+  color: white;
+  font-size: 4em;
+  letter-spacing: 0.5em;
+  /* Animation provies a slight random skew. Check bottom of doc
+  for more information on how to random skew. */
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+.kaio::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: 2px;
+  text-shadow: -2px 0 #ff00c1;
+  /* Creates an initial clip for our glitch. This works in
+  a typical top,right,bottom,left fashion and creates a mask
+  to only show a certain part of the glitch at a time. */
+  clip: rect(44px, 450px, 56px, 0);
+  /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+  with an alternating animation to keep things fresh. */
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+.kaio::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+  0% {
+    clip: rect(5px, 9999px, 76px, 0);
+    transform: skew(0.51deg);
+  }
+  5% {
+    clip: rect(69px, 9999px, 13px, 0);
+    transform: skew(0.24deg);
+  }
+  10% {
+    clip: rect(51px, 9999px, 82px, 0);
+    transform: skew(0.21deg);
+  }
+  15% {
+    clip: rect(1px, 9999px, 10px, 0);
+    transform: skew(0.14deg);
+  }
+  20% {
+    clip: rect(2px, 9999px, 80px, 0);
+    transform: skew(0.25deg);
+  }
+  25% {
+    clip: rect(80px, 9999px, 99px, 0);
+    transform: skew(0.25deg);
+  }
+  30% {
+    clip: rect(52px, 9999px, 93px, 0);
+    transform: skew(0.73deg);
+  }
+  35% {
+    clip: rect(93px, 9999px, 81px, 0);
+    transform: skew(0.08deg);
+  }
+  40% {
+    clip: rect(14px, 9999px, 81px, 0);
+    transform: skew(0.16deg);
+  }
+  45% {
+    clip: rect(20px, 9999px, 54px, 0);
+    transform: skew(0.15deg);
+  }
+  50% {
+    clip: rect(1px, 9999px, 97px, 0);
+    transform: skew(0.2deg);
+  }
+  55% {
+    clip: rect(31px, 9999px, 85px, 0);
+    transform: skew(0.95deg);
+  }
+  60% {
+    clip: rect(95px, 9999px, 45px, 0);
+    transform: skew(0.98deg);
+  }
+  65% {
+    clip: rect(43px, 9999px, 58px, 0);
+    transform: skew(0.72deg);
+  }
+  70% {
+    clip: rect(93px, 9999px, 19px, 0);
+    transform: skew(0.2deg);
+  }
+  75% {
+    clip: rect(57px, 9999px, 22px, 0);
+    transform: skew(0.07deg);
+  }
+  80% {
+    clip: rect(82px, 9999px, 87px, 0);
+    transform: skew(0.58deg);
+  }
+  85% {
+    clip: rect(84px, 9999px, 90px, 0);
+    transform: skew(0.17deg);
+  }
+  90% {
+    clip: rect(87px, 9999px, 54px, 0);
+    transform: skew(1deg);
+  }
+  95% {
+    clip: rect(88px, 9999px, 30px, 0);
+    transform: skew(0.4deg);
+  }
+  100% {
+    clip: rect(39px, 9999px, 85px, 0);
+    transform: skew(0.77deg);
+  }
+}
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(16px, 9999px, 32px, 0);
+    transform: skew(0.31deg);
+  }
+  5% {
+    clip: rect(77px, 9999px, 62px, 0);
+    transform: skew(0.83deg);
+  }
+  10% {
+    clip: rect(24px, 9999px, 29px, 0);
+    transform: skew(0.53deg);
+  }
+  15% {
+    clip: rect(74px, 9999px, 26px, 0);
+    transform: skew(0.78deg);
+  }
+  20% {
+    clip: rect(93px, 9999px, 82px, 0);
+    transform: skew(0.75deg);
+  }
+  25% {
+    clip: rect(44px, 9999px, 12px, 0);
+    transform: skew(0.91deg);
+  }
+  30% {
+    clip: rect(70px, 9999px, 4px, 0);
+    transform: skew(0.99deg);
+  }
+  35% {
+    clip: rect(39px, 9999px, 84px, 0);
+    transform: skew(0.35deg);
+  }
+  40% {
+    clip: rect(17px, 9999px, 43px, 0);
+    transform: skew(0.91deg);
+  }
+  45% {
+    clip: rect(69px, 9999px, 69px, 0);
+    transform: skew(0.92deg);
+  }
+  50% {
+    clip: rect(9px, 9999px, 55px, 0);
+    transform: skew(0.13deg);
+  }
+  55% {
+    clip: rect(22px, 9999px, 64px, 0);
+    transform: skew(0.67deg);
+  }
+  60% {
+    clip: rect(96px, 9999px, 64px, 0);
+    transform: skew(0.3deg);
+  }
+  65% {
+    clip: rect(21px, 9999px, 37px, 0);
+    transform: skew(0.18deg);
+  }
+  70% {
+    clip: rect(47px, 9999px, 71px, 0);
+    transform: skew(0.26deg);
+  }
+  75% {
+    clip: rect(46px, 9999px, 99px, 0);
+    transform: skew(0.51deg);
+  }
+  80% {
+    clip: rect(86px, 9999px, 67px, 0);
+    transform: skew(0.32deg);
+  }
+  85% {
+    clip: rect(59px, 9999px, 42px, 0);
+    transform: skew(0.96deg);
+  }
+  90% {
+    clip: rect(89px, 9999px, 91px, 0);
+    transform: skew(0.26deg);
+  }
+  95% {
+    clip: rect(41px, 9999px, 50px, 0);
+    transform: skew(0.71deg);
+  }
+  100% {
+    clip: rect(42px, 9999px, 3px, 0);
+    transform: skew(0.03deg);
+  }
+}
+@keyframes glitch-skew {
+  0% {
+    transform: skew(0deg);
+  }
+  10% {
+    transform: skew(1deg);
+  }
+  20% {
+    transform: skew(2deg);
+  }
+  30% {
+    transform: skew(-2deg);
+  }
+  40% {
+    transform: skew(-2deg);
+  }
+  50% {
+    transform: skew(0deg);
+  }
+  60% {
+    transform: skew(-3deg);
+  }
+  70% {
+    transform: skew(-3deg);
+  }
+  80% {
+    transform: skew(-4deg);
+  }
+  90% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(3deg);
+  }
+}
+/* 
+  Based from this article from Divya Manian - 
+  http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    position: relative;
+    margin: 0 auto 1em;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    margin-left: -120px;
+    content: '';
+    background-color: #fff;
+}
+
+/* Clip text element */
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+    background-image: url(http://hd.wallpaperswide.com/thumbs/simple_abstract_painting-t2.jpg);
+}
+
+.clip-text_two {
+    background-image: url(http://wallpaper-gallery.net/images/black-abstract-wallpaper/black-abstract-wallpaper-4.jpg);
+}
+
+.clip-text_tree {
+    background-image: url(http://hd.wallpaperswide.com/thumbs/fomef___colormixing_5k-t2.jpg);
+}
+
+.clip-text_four {
+    background-image: url(http://hd.wallpaperswide.com/thumbs/abstract_black_design_2-t2.jpg);
+}
+
+.clip-text_five {
+    background-image: url(http://hd.wallpaperswide.com/thumbs/super_nova-t2.jpg);
+}
+
+.clip-text_six {
+    background-image: url(https://www.hdwallpapers.net/previews/3d-colorful-spiral-1057.jpg);
+}
+
+.clip-text_seven {
+    background-image: url(http://cdn8.staztic.com/app/a/6278/6278761/hd-abstract-wallpapers-1-0-s-307x512.jpg);
+}
+
+.clip-text_eight {
+    background-image: url(http://lorempixel.com/410/200/people);
+}
+
+.clip-text_nine {
+    background-image: url(https://wallpaperbrowse.com/media/images/background-pictures-10.jpg);
+}
+
+.clip-text_ten {
+    background-image: url(http://lorempixel.com/480/200/nightlife/8);
+}
+
+.clip-text_eleven {
+    background-image: url(http://www.wallcoo.net/cartoon/abstract_rainbow_colours_13_1920x1200/images/Abstract_Rainbow_colour_pattern_4116.jpg);
+    background-size: cover;
+}
+
+.clip-text_twelve {
+    background-image: url(http://hd.wallpaperswide.com/thumbs/abstract_wallpaper_for_mac-t2.jpg);
+}
+
+.clip-text_thirteen {
+    background-image: url(https://picsum.photos/200/300/?random);
+}
+
+.clip-text_fourteen {
+    background-image: url(http://hd.wallpaperswide.com/thumbs/awesome_colorful_paint_3d-t2.jpg);
+}
+
+.clip-text_fifteen {
+    background-image: url(http://lorempixel.com/480/200/nightlife/5);
+}
+
+body {
+  background-image: url("bgpenis.jpg");
+  background-repeat: repeat;
+}
+
+
+</style>
+</head>
+<body>
+
+<!--  
+      <div class="clip-text clip-text_six">KAIO B4DVIBES</div>
+
+<h1>EU ODEIO A MINHA VIDA</h1>
+<h2>descubra a seguir os motivos:</h2>
+
+<img alt="" src="https://i.kym-cdn.com/photos/images/newsfeed/001/087/822/466.png">
+-->
+<b></b>
+<div id="app">
+	<div id="wrapper">
+		<!-- Make sure data-text equals the text you put inside the tags. -->
+		<h1 class="kaio" data-text="kaio">kaio</h1>
+		<span class="sub">CHEGA EU NÃO AGUENTO MAIS</span>
+		<center>
+		<img alt="" src="https://i.kym-cdn.com/photos/images/newsfeed/001/087/822/466.png">
+		</center>
+	</div>
+</div>
+</body>
+</html>

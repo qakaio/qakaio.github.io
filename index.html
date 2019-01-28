@@ -304,7 +304,7 @@ skew to change the 'thickness' of the glitch.*/
 /* 
   Based from this article from Divya Manian - 
   http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
-*/
+
 
 * {
     margin: 0;
@@ -353,7 +353,7 @@ body {
     background-color: #fff;
 }
 
-/* Clip text element */
+ Clip text element 
 .clip-text {
     font-size: 6em;
     font-weight: bold;
@@ -363,7 +363,7 @@ body {
     margin: .25em;
     padding: .5em .75em;
     text-align: center;
-    /* Color fallback */
+    /* Color fallback 
     color: #fff;
     -webkit-background-clip: text;
 
@@ -376,7 +376,7 @@ body {
     content: '';
 }
 
-/* Background */
+/* Background 
 .clip-text:before {
     z-index: -2;
     top: 0;
@@ -386,7 +386,7 @@ body {
     background-image: inherit;
 }
 
-/* Text Background (black zone) */
+/* Text Background (black zone) 
 .clip-text:after {
     position: absolute;
     z-index: -1;
@@ -397,7 +397,7 @@ body {
     background-color: #000;
 }
 
-/* Change the background position to display letter when the black zone isn't here */
+/* Change the background position to display letter when the black zone isn't here 
 .clip-text--no-textzone:before {
     background-position: -.65em 0;
 }
@@ -406,7 +406,7 @@ body {
     content: none;
 }
 
-/* Use Background-size cover for photo background and no-repeat background */
+/* Use Background-size cover for photo background and no-repeat background 
 .clip-text--cover,
 .clip-text--cover:before {
     background-repeat: no-repeat;
@@ -415,7 +415,7 @@ body {
   background-position: 50% 50%;
 }
 
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com 
 .clip-text_one {
     background-image: url(http://hd.wallpaperswide.com/thumbs/simple_abstract_painting-t2.jpg);
 }
@@ -476,6 +476,8 @@ body {
 .clip-text_fifteen {
     background-image: url(http://lorempixel.com/480/200/nightlife/5);
 }
+
+*/
 
 body {
   background-image: url("https://png.pngtree.com/element_our/png_detail/20180807/geometric-simple-luxury-blue-minimalistic-pattern-with-lines-png_53565.jpg");

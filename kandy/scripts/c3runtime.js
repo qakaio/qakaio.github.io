@@ -3133,9 +3133,11 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		C3.Plugins.Particles,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Behaviors.Platform.Acts.SetMaxSpeed,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Behaviors.solid.Acts.SetEnabled,
 		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.System.Exps.random,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Sprite.Exps.X,
@@ -3164,9 +3166,8 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Button.Cnds.OnClicked,
-		C3.Plugins.Touch.Cnds.OnDoubleTapGesture,
+		C3.Plugins.Touch.Cnds.OnDoubleTapGestureObject,
 		C3.Plugins.Text.Acts.Destroy,
-		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Behaviors.Sin.Acts.SetEnabled
 		];
@@ -3212,13 +3213,17 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		{Sprite5: 0},
 		{Sprite7: 0},
 		{FonteDeSprites: 0},
-		{swd_shadow: 0},
 		{Texto3: 0},
-		{Partículas: 0},
+		{part_shopsmoke: 0},
+		{spr_adaga: 0},
+		{dagger_price: 0},
+		{spr_ironboots: 0},
+		{ironboots_price: 0},
 		{playervivo: 0},
 		{enemycol: 0},
 		{goldcoins: 0},
-		{playeratk: 0}
+		{playeratk: 0},
+		{movespeed: 0}
 	];
 }
 
@@ -3320,8 +3325,15 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 	}
 
 	self.C3_ExpressionFuncs = [
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
 		() => 0,
-		() => 30,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => Math.round(f0(15, 30));
+		},
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
@@ -3329,10 +3341,6 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpInstVar();
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
 		},
 		() => 1,
 		() => 0.3,
@@ -3348,7 +3356,11 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		},
 		() => 3,
 		() => 100,
-		() => ""
+		() => 800,
+		() => 10,
+		() => 500,
+		() => 80,
+		() => 70
 	];
 }
 

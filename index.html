@@ -1,374 +1,172 @@
-<!DOCTYPE html>
-<html>
-<head>
-	
-<script data-ad-client="ca-pub-6575750628828282" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-	</script>
-	<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6575750628828282",
-    enable_page_level_ads: true
-  });
-</script>
-<meta charset="ISO-8859-1">
 
-<style>
-}
-/* Responsive Test */
-img.gifresize {
-  width: 100%;
-  height: auto;
-}
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-</style>
-<title>WABADUL BALDUALALA</title>
+    #rainbow-text {
+      background-image: repeating-linear-gradient(45deg, violet, indigo, blue, violet);
+      text-align: center;
+      background-size: 800% 800%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 5s ease infinite;
+    }
 
-<!--  Site construído com o intuito de me aprofundar em HTML, CSS e JavaScript.
-      Não leve nada encontrado aqui muito a sério.
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%
+      }
 
-      Kaio Garcia 27/01/2019.
+      50% {
+        background-position: 100% 25%
+      }
 
-	(\_/)
-	(o.o)
-	(>_<)o
--->
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
-<style>
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100");
-html, body, h1 {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
+    body {
+      background-color: #1a1e23;
+    }
 
-#app {
-  background: #0C0C0C;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 5px, black 5px), url("");
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
+    a {
+      color: #ff2bb1;
+    }
 
-#wrapper {
-  text-align: center;
-}
+    #pink {
+      color: #ff2bb1;
+    }
 
-.sub {
-  color: #64dcdc;
-  letter-spacing: 0.5em;
-  font-size: 2em;
-}
+    h1 {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 15px;
+      color: white;
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
 
-/* Our mixin positions a copy of our text
-directly on our existing text, while
-also setting content to the appropriate
-text set in the data-text attribute. */
-.kaio {
-  position: relative;
-  color: white;
-  font-size: 6em;
-  letter-spacing: 0.3em;
-  /* Animation provies a slight random skew. Check bottom of doc
-  for more information on how to random skew. */
-  animation: glitch-skew 1s infinite linear alternate-reverse;
-}
-.kaio::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  left: 2px;
-  text-shadow: -2px 0 #ff00c1;
-  /* Creates an initial clip for our glitch. This works in
-  a typical top,right,bottom,left fashion and creates a mask
-  to only show a certain part of the glitch at a time. */
-  clip: rect(44px, 450px, 56px, 0);
-  /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
-  with an alternating animation to keep things fresh. */
-  animation: glitch-anim 5s infinite linear alternate-reverse;
-}
-.kaio::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  left: -2px;
-  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-  animation: glitch-anim2 1s infinite linear alternate-reverse;
-}
+    h2 {
+      margin-top: 0px;
+      font-family: 'Nunito', sans-serif;
+      color: #0ec9e6;
+    }
 
-/* Creates an animation with 20 steaps. For each step, it calculates 
-a percentage for the specific step. It then generates a random clip
-box to be used for the random glitch effect. Also adds a very subtle
-skew to change the 'thickness' of the glitch.*/
-@keyframes glitch-anim {
-  0% {
-    clip: rect(5px, 9999px, 76px, 0);
-    transform: skew(0.51deg);
-  }
-  5% {
-    clip: rect(69px, 9999px, 13px, 0);
-    transform: skew(0.24deg);
-  }
-  10% {
-    clip: rect(51px, 9999px, 82px, 0);
-    transform: skew(0.21deg);
-  }
-  15% {
-    clip: rect(1px, 9999px, 10px, 0);
-    transform: skew(0.14deg);
-  }
-  20% {
-    clip: rect(2px, 9999px, 80px, 0);
-    transform: skew(0.25deg);
-  }
-  25% {
-    clip: rect(80px, 9999px, 99px, 0);
-    transform: skew(0.25deg);
-  }
-  30% {
-    clip: rect(52px, 9999px, 93px, 0);
-    transform: skew(0.73deg);
-  }
-  35% {
-    clip: rect(93px, 9999px, 81px, 0);
-    transform: skew(0.08deg);
-  }
-  40% {
-    clip: rect(14px, 9999px, 81px, 0);
-    transform: skew(0.16deg);
-  }
-  45% {
-    clip: rect(20px, 9999px, 54px, 0);
-    transform: skew(0.15deg);
-  }
-  50% {
-    clip: rect(1px, 9999px, 97px, 0);
-    transform: skew(0.2deg);
-  }
-  55% {
-    clip: rect(31px, 9999px, 85px, 0);
-    transform: skew(0.95deg);
-  }
-  60% {
-    clip: rect(95px, 9999px, 45px, 0);
-    transform: skew(0.98deg);
-  }
-  65% {
-    clip: rect(43px, 9999px, 58px, 0);
-    transform: skew(0.72deg);
-  }
-  70% {
-    clip: rect(93px, 9999px, 19px, 0);
-    transform: skew(0.2deg);
-  }
-  75% {
-    clip: rect(57px, 9999px, 22px, 0);
-    transform: skew(0.07deg);
-  }
-  80% {
-    clip: rect(82px, 9999px, 87px, 0);
-    transform: skew(0.58deg);
-  }
-  85% {
-    clip: rect(84px, 9999px, 90px, 0);
-    transform: skew(0.17deg);
-  }
-  90% {
-    clip: rect(87px, 9999px, 54px, 0);
-    transform: skew(1deg);
-  }
-  95% {
-    clip: rect(88px, 9999px, 30px, 0);
-    transform: skew(0.4deg);
-  }
-  100% {
-    clip: rect(39px, 9999px, 85px, 0);
-    transform: skew(0.77deg);
-  }
-}
-@keyframes glitch-anim2 {
-  0% {
-    clip: rect(16px, 9999px, 32px, 0);
-    transform: skew(0.31deg);
-  }
-  5% {
-    clip: rect(77px, 9999px, 62px, 0);
-    transform: skew(0.83deg);
-  }
-  10% {
-    clip: rect(24px, 9999px, 29px, 0);
-    transform: skew(0.53deg);
-  }
-  15% {
-    clip: rect(74px, 9999px, 26px, 0);
-    transform: skew(0.78deg);
-  }
-  20% {
-    clip: rect(93px, 9999px, 82px, 0);
-    transform: skew(0.75deg);
-  }
-  25% {
-    clip: rect(44px, 9999px, 12px, 0);
-    transform: skew(0.91deg);
-  }
-  30% {
-    clip: rect(70px, 9999px, 4px, 0);
-    transform: skew(0.99deg);
-  }
-  35% {
-    clip: rect(39px, 9999px, 84px, 0);
-    transform: skew(0.35deg);
-  }
-  40% {
-    clip: rect(17px, 9999px, 43px, 0);
-    transform: skew(0.91deg);
-  }
-  45% {
-    clip: rect(69px, 9999px, 69px, 0);
-    transform: skew(0.92deg);
-  }
-  50% {
-    clip: rect(9px, 9999px, 55px, 0);
-    transform: skew(0.13deg);
-  }
-  55% {
-    clip: rect(22px, 9999px, 64px, 0);
-    transform: skew(0.67deg);
-  }
-  60% {
-    clip: rect(96px, 9999px, 64px, 0);
-    transform: skew(0.3deg);
-  }
-  65% {
-    clip: rect(21px, 9999px, 37px, 0);
-    transform: skew(0.18deg);
-  }
-  70% {
-    clip: rect(47px, 9999px, 71px, 0);
-    transform: skew(0.26deg);
-  }
-  75% {
-    clip: rect(46px, 9999px, 99px, 0);
-    transform: skew(0.51deg);
-  }
-  80% {
-    clip: rect(86px, 9999px, 67px, 0);
-    transform: skew(0.32deg);
-  }
-  85% {
-    clip: rect(59px, 9999px, 42px, 0);
-    transform: skew(0.96deg);
-  }
-  90% {
-    clip: rect(89px, 9999px, 91px, 0);
-    transform: skew(0.26deg);
-  }
-  95% {
-    clip: rect(41px, 9999px, 50px, 0);
-    transform: skew(0.71deg);
-  }
-  100% {
-    clip: rect(42px, 9999px, 3px, 0);
-    transform: skew(0.03deg);
-  }
-}
-@keyframes glitch-skew {
-  0% {
-    transform: skew(0deg);
-  }
-  10% {
-    transform: skew(1deg);
-  }
-  20% {
-    transform: skew(2deg);
-  }
-  30% {
-    transform: skew(-2deg);
-  }
-  40% {
-    transform: skew(-2deg);
-  }
-  50% {
-    transform: skew(0deg);
-  }
-  60% {
-    transform: skew(-3deg);
-  }
-  70% {
-    transform: skew(-3deg);
-  }
-  80% {
-    transform: skew(-4deg);
-  }
-  90% {
-    transform: skew(-2deg);
-  }
-  100% {
-    transform: skew(3deg);
-  }
-}
+    p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      color: #0ec9e6;
+      margin-top: 0px;
+      margin-bottom: 4px;
+    }
 
-body {
+    li {
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      color: #0ec9e6;
+      background-color: #121212;
+    }
 
-/* Removing png background to create a css one
+    #prof {
+      width: 170px;
+      border-radius: 20%;
+      padding: 10px;
+      border: 2px solid #ff2bb1;
+    }
 
-  background-image: url("https://png.pngtree.com/element_our/png_detail/20180807/geometric-simple-luxury-blue-minimalistic-pattern-with-lines-png_53565.jpg");
+    #hireme {
+      border-radius: 5%;
+      border: 2px solid #ff2bb1;
+    }
 
-  background-repeat: repeat;
-*/
-}
-}
+    hr {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border: 1px solid #ff2bb1;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    #divesq {
+    background-color: #121212;
+    }
+  </style>
 
-img {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
-}
+<body data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="">
+  <div id="divesq">
+    <br>
+    <center><img id="prof" src="./hey_files/profilepic.jpg" style="padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;">
+      <h1 id="rainbow-text">kaiorampz </h1>
+  </center></div>
 
-</style>
-</head>
-<body>
-<b></b>
-<div id="app">
-	<div id="wrapper">
-		<!-- Make sure data-text equals the text you put inside the tags. -->
-		<h1 class="kaio garcia" data-text="kaio garcia">kaio garcia</h1>
-		<br>
-		</div>
-    <img class="gifresize" src="https://i.imgur.com/TY5TiV6.gif" width="230px" height="auto">
-    <!-- <img class="giflogo" src="https://i.imgur.com/TY5TiV6.gif"> 
-      Gif com resolução maior para testes de responsividade
+<hr>
 
-    -->
-	
+<center>
+  <div id="divesq">
+    <h2>OI, TUDO BEM? 💙
+      </h2></div>
+      <p id="pzao">My name is <b>Kaio</b>. I live in Brazil and work as a software tester. I also like to create my own games and 2D art, mainly pixel art and animation
+      </p><p id="pzao">Usually I am busy playing a new instrument, having a beer, watching youtube tutorials, or maybe trying to cook a random recipe that I saw online 🍺🍖
+      </p><p id="pzao">I was a hardcore gamer once but nowadays I am trying my best to appreciate everything else life has to offer other than <b>"the internet"</b>🌈
+      </p><p id="pzao"><b>Contact me: <a>kaioricardogarcia@gmail.com</a></b> 🙂
+      </p><p id="pzao"><b>LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/kaiogarcia/">https://www.linkedin.com/in/kaiogarcia/</a></b> 🪐
+      </p><p id="pzao"><b>Upwork: <a target="_blank" href="https://www.upwork.com/freelancers/~012883d8474aaab92f">My Profile</a></b> 🤖
+      <br>
+      </p><hr>
+      <div id="divesq">
+      <h2>SOME OF MY PROJECTS 🎮</h2>
+      </div>
+
+        <div>
+          <li><a href="https://kaiorampz.github.io/barcelo/">Barcelo (mobile game)</a></li>
+          <p>-2D game created on a GameJam where the theme was "Micro-Universe" (Touch/Click to control player speed)
+          </p><div>
+            <li><a href="https://kaiorampz.github.io/Anin/">Anin (app infantil)</a></li>
+            <p>-A simple app that play random sounds, created for my baby daughter
+          </p></div>
+          <div>
+            <li><a href="https://kaiorampz.github.io/clackpow/">Clackpow (roleta russa)</a></li>
+            <p>-A russian roulette simulator
+          </p></div>
+          <div>
+            <li><a href="https://kaiorampz.github.io/hypersheep/">Hyperactive Sheep (2D scroller)</a></li>
+            <p>-2D infinite runner (Space = jump, down arrow key after jumping = fall faster</p>
+          </div>
+          <div>
+            <li><a href="https://kaiorampz.github.io/bluman/">Bluman (2D platformer)</a></li>
+            <p>-Basic 2D platformer created to study some classic platformer mechanics</p>
+          </div>
+          <div>
+            <li><a href="https://kaiorampz.github.io/dialogsys/">Oldschool Dialog</a></li>
+            <p>-Classic dialog system with a "typewriter" effect</p>
+          <br>
+          </div>
+          </div>
+
+      <hr>
+      <div>
+    <div id="divesq">
+      <h2>HIRE ME! 🌞</h2>
+    </div>
+      <a target="_blank" href="https://www.upwork.com/services/product/i-will-try-my-best-to-break-your-website-and-record-the-whole-process-1514666697139478528">
+      <p id"pzao">I will try my best to break your website and record the whole process:</p>
+    </a>
+    <a target="_blank" href="https://www.upwork.com/services/product/i-will-try-my-best-to-break-your-website-and-record-the-whole-process-1514666697139478528">
+  <center><img id="hireme" src="./hey_files/bonkwebsite.png" height="20%";><br>
+  </a>
 </div>
-</body>
-</html>
 
-<html>
+    <br>
+      <hr>
+    </div>
+      <div id="divesq">
+      <h2>SOME OF MY ART ✏️</h2>
+      </div>
+        <img src="./hey_files/TY5TiV6.gif" width="230px" height="auto">
+        <img src="./hey_files/mumia.gif" width="230px" height="auto" align="top">
+        <img src="./hey_files/skullbossgif.gif" width="230px" height="auto" align="top">
+        <h2>(In progress)
+        <br>
 
-<script>
-
-
-
+</h2></center></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

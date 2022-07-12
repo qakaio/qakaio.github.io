@@ -2,7 +2,6 @@
 <!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
   <head>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏲</text></svg>">
     <meta charset="utf-8">
     <title>Alarm Clock in JavaScript | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
@@ -12,23 +11,23 @@
     <div class="wrapper">
       <h1>00:00:00 PM</h1>
       <div class="content">
-        <div class="column">
+        <div class="column" id="hour">
           <select>
             <option value="Hour" selected disabled hidden>Hour</option>
           </select>
         </div>
-        <div class="column">
+        <div class="column" id="minute">
           <select>
             <option value="Minute" selected disabled hidden>Minute</option>
           </select>
         </div>
-        <div class="column">
+        <div class="column" id="ampm">
           <select>
             <option value="AM/PM" selected disabled hidden>AM/PM</option>
           </select>
         </div>
       </div>
-      <button>Set Alarm</button>
+      <button id="set">Set Alarm</button>
     </div>
 
     <script src="script.js"></script>

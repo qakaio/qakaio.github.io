@@ -1,11 +1,5 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
 select {
   color: #6fe1f5;
@@ -25,11 +19,7 @@ body, .wrapper, .content{
   align-items: center;
   justify-content: center;
 }
-body{
-  padding: 0 10px;
-  min-height: 100vh;
-  background: #141414;
-}
+
 .wrapper{
   width: 900px;
   padding: 30px 30px 38px;

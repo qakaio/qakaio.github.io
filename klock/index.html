@@ -2,6 +2,7 @@
 <!-- Adapted from a project done by CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
   <head>
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏲</text></svg>">
     <meta charset="utf-8">
     <title>Alarm Clock in JavaScript | CodingNepal</title>
@@ -31,7 +32,45 @@
       <button id="set">Set Alarm</button>
     </div>
 
-    <script src="script.js"></script>
 
-  </body>
+
+    <link rel="stylesheet" href="main.css" />
+	<header>
+		<form id="new-task-form">
+			<input
+				type="text"
+				name="new-task-input"
+				id="new-task-input"
+				placeholder="..." />
+			<input
+				type="submit"
+				id="new-task-submit"
+				value="ADD" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<div id="tasks">
+
+				<!-- <div class="task">
+					<div class="content">
+						<input
+							type="text"
+							class="text"
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+<script src="main.js"></script>
+</html>
+
+</body>
 </html>

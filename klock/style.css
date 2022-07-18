@@ -1,25 +1,39 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#colorpalette {
+    color: #f15bb5;
+    color: #00bbf9;
+    color: #141414;
+    color: #1a1e23;
+
+    color: #323a4b;
+    color: #24282f;
+    color: #222429;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Press Start 2P';
 }
 
 select {
-  color: #6fe1f5;
+  color: #00bbf9;
   background-color: #141414;
 }
 option {
-  color: #6fe1f5;
+  color: #00bbf9;
   background-color: #141414;
 }
 
 h1 {
-  color: #6fe1f5;;
+  color: #00bbf9;;
   text-shadow: rgb(20, 20, 20) 1px 0 8px;
 }
+
 body, .wrapper, .content{
   display: flex;
   align-items: center;
@@ -38,13 +52,13 @@ body{
 .wrapper{
   width: 900px;
   padding: 30px 30px 38px;
-  background: rgb(41, 41, 41);
+  background: #1a1e23;
   border-radius: 10px;
   flex-direction: column;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   outline-style: outset;
   outline-width: 5px;
-  outline-color: #6fe1f5;
+  outline-color: #00bbf9;
   margin-top: 60px;
 }
 .wrapper img{
@@ -84,7 +98,7 @@ body{
   width: 100%;
   border: none;
   outline: none;
-  color: #6fe1f5;;
+  color: #00bbf9;;
   cursor: pointer;
   font-size: 20px;
   padding: 17px 0;
@@ -94,19 +108,13 @@ body{
 }
 
 :root {
-	--dark: rgb(34, 34, 34);
-	--darker: rgb(70, 70, 70);
-	--darkest: rgb(55, 55, 55);
+	--dark: #080808;
+	--darker: #121212;
+	--darkest: #1a1e23;
 	--grey: #6B7280;
 	--pink: #00bbf9;
 	--purple: rgb(0, 240, 255);
 	--light: #EEE;
-}
-
-* {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Fira sans", sans-serif;
 }
 
 header {

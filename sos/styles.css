@@ -1,76 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-    body {
-    background-color: #1a1e23;
-    }
-
-    a {
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  #colorpalette {
     color: #f15bb5;
-    }
+    color: #00bbf9;
+    color: #141414;
+    color: #1a1e23;
 
-    hr {
+    color: #323a4b;
+    color: #24282f;
+    color: #222429;
+}
+
+body {
+    background-color: #1a1e23;
+}
+
+p {
+    color:#00bbf9;
+    text-align: center;
+    padding: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+a {
+    color:#f15bb5;
+}
+
+.centertxt {
+    text-align: center;
+}
+hr { 
     border: 1px solid #f15bb5;
     margin-top: 0px;
     margin-bottom: 0px;
     }
 
-    pre {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    }
-
-    .divtable {
-    inline-size: 150px;
-    overflow-wrap: break-word;
-    }
-
-    .header {
-    background-color: #141414;
-    padding-bottom: 10px;
-    }
-
-    .gamedescription {
-    font-family: monospace;
-    white-space: pre;
-    font-size: 14px;
-    color: #00bbf9;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    }
-
-    .gamelist {
-    font-family: monospace;
-    font-size: 22px;
-    color:  #f15bb5;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    background-color: #141414;
-    }
-
-    .title {
-    display: block;
+.pixeltxt {
     font-family: 'Press Start 2P';
-    white-space: pre;
-    font-size: 22px;
-    color: #00bbf9;
-    padding-top: 8px;
-    margin-top: 0px;
-    margin-bottom: 8px;
-    background-color: #141414;
-    overflow-wrap: break-word;
-    }
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    color: #00bbf9
+  }
 
-    .avatar {
+.avatar {
     width: 250px;
     height: 250px;
-    border-radius: 100%;
-    padding: 10px;
-
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
-    .centerobj {
+.centerobj {
     margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
@@ -78,101 +66,65 @@
     margin-left: auto;
     display: block;
     }
-    .centertxt {
-        text-align: center;
-    }
-    .pinktxt {
-        color: #f15bb5;
-    }
-    .bluetxt {
-        color: #00bbf9;
-    }
-    .pixeltxt {
-        font-family: 'Press Start 2P';
-        font-size: 36px;
-        margin-top: 0px;
-        margin-bottom: 10px;
-      }
-    .regulartxt {
-        display: block;
-        font-family: monospace;
-        white-space: pre;
-        font-size: 18px;
-        letter-spacing: 0px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        overflow-wrap: break-word;
-        inline-size: 150px;
-        overflow-wrap: break-word;
-      }
 
-    p {
-      display: block;
-      font-family: monospace;
-      white-space: pre;
-      font-size: 18px;
-      letter-spacing: 0px;
-      color: #00bbf9;
-      margin-top: 2px;
-      margin-bottom: 2px;
-      word-break: break-all;
-      word-wrap: normal;
-    }
-
-    .pixelart {
-        width: 250px;
-        height: auto;
-        padding: 10px;
-    }
-    /*
-    a {
-      color: #f15bb5;
-    }
-
-    #pink {
-      color: #f15bb5;
-    }
-
-    h1 {
-      font-family: 'Bebas Neue', cursive;
-      letter-spacing: 15px;
-      color: white;
-      font-size: 50px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-
-
-
-
-    li {
-      font-family: 'Nunito', sans-serif;
-      font-size: 20px;
-      color: #00bbf9;
-      background-color: #141414;
-    }
-
-    #prof {
-      width: 250px;
-      height: 250px;
-      border-radius: 100%;
-      padding: 10px;
-      border: 2px solid #f15bb5;
-    }
-
-    #hireme {
-      border-radius: 5%;
-      border: 2px solid #f15bb5;
-    }
-
-    hr {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      border: 1px solid #f15bb5;
-    }
-
-    #divesq {
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
     background-color: #141414;
-    }
-*/
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #323a4b;
+  }
+  
+  .aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .footer {
+    background-color: #141414;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  

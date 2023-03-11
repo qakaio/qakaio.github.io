@@ -13,11 +13,12 @@
     color: #222429;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Press Start 2P';
+  zoom: 0.9;
 }
 
 select {

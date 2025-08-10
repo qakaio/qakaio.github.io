@@ -1,130 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-* {
-    box-sizing: border-box;
-  }
-  
-  
-  #colorpalette {
-    color: #f15bb5;
-    color: #00bbf9;
-    color: #141414;
-    color: #1a1e23;
-
-    color: #323a4b;
-    color: #24282f;
-    color: #222429;
-}
-
-body {
-    background-color: #1a1e23;
-}
-
-p {
-    color:#00bbf9;
-    text-align: center;
-    padding: 0px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-a {
-    color:#f15bb5;
-}
-
-.centertxt {
-    text-align: center;
-}
-hr { 
-    border: 1px solid #f15bb5;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    }
-
-h1 {
-    font-family: 'Press Start 2P';
-    font-size: 26px;
-    color:#00bbf9;
-    text-align: center;
-    padding: 0px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
-
-.avatar {
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border-radius: 50%;
-    margin-bottom: 10px;
-    }
-.centerobj {
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 4px;
-    margin-left: auto;
-    display: block;
-    }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  
-  html {
-    font-family: "Lucida Sans", sans-serif;
-  }
-  
-  .header {
-    padding: 15px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-  }
-  
-  .menu ul {
-    list-style-type: none;
+html, body {
     margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #141414;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .menu li:hover {
-    background-color: #323a4b;
-  }
-  
-  .aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a1e23, #0a0c0e);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 0 15px;
   }
-  
-  .footer {
-    background-color: #141414;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-  }
-  
-  /* For mobile phones: */
-  [class*="col-"] {
+  .container {
     width: 100%;
+    max-width: 800px;
   }
-  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #00bbf9;
+  }
+  h1 {
+    color: #00bbf9;
+    margin: 20px 0 10px;
+    font-size: 2.5rem;
+  }
+  h2 {
+    color: #888;
+    font-weight: normal;
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+  }
+  p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6em;
+    font-size: 1.1rem;
+  }
+  .buttons {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .btn {
+    padding: 14px 28px;
+    border: 2px solid #00bbf9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    font-size: 1.1rem;
+  }
+  .btn-primary {
+    background: #00bbf9;
+    color: #1a1e23;
+  }
+  .btn:hover {
+    background: #f15bb5;
+    border-color: #f15bb5;
+    color: white;
+  }
+  .icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .icons a {
+    color: white;
+    font-size: 32px;
+    transition: color 0.3s;
+  }
+  .icons a:hover {
+    color: #f15bb5;
+  }
+  @media (max-width: 600px) {
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .btn {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+    .icons a {
+      font-size: 28px;
+    }
+  }

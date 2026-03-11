@@ -5,10 +5,6 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Parabéns por colocar o DIU - Capa</title>
-<audio controls autoplay loop>
-<source src="lastfriday.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Pacifico&amp;family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -257,9 +253,27 @@ Your browser does not support the audio element.
             animation: pulse-cringe 1.5s infinite;
         }
 
+        /* Fixed audio player so it doesn't overlap the celebration layout */
+        .audio-player {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            z-index: 150;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+            padding: 8px 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+        }
+
     </style>
 </head>
 <body>
+<div class="audio-player">
+  <audio controls autoplay loop>
+    <source src="lastfriday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
 <div class="slide-container">
 <!-- Corner Flowers -->
 <div class="flower-corner flower-tl">🌺</div>
@@ -283,13 +297,10 @@ Your browser does not support the audio element.
 <!-- Cute Kittens Images (using placeholders that look like stickers) -->
 <img alt="Gatinho fofo" class="cat-img cat-left" src="https://page.gensparksite.com/slides_images/2317b254fc5ec0d459123a4d71da8d91.webp" />
 <img alt="Gatinho piscando" class="cat-img cat-right" src="https://page.gensparksite.com/slides_images/82bcbc7dff4adc48e3bcd224d1304697.webp" />
-<!-- Seus uploads (adicione photo1.jpg e photo2.jpg na mesma pasta) -->
-<img alt="Foto 1" class="user-photo photo-left" src="photo1.jpg" />
-<img alt="Foto 2" class="user-photo photo-right" src="photo2.jpg" />
 <div class="content-box">
 <h1>🎉💖 PARABÉNS<br/>POR COLOCAR O DIU LETICIA! 💖🎉</h1>
 <p class="subtitle">
-                Uma celebração para a decisão MAIS ICONIC da sua vidaaaaaaa! ✨🌸💖
+                Uma celebração para a decisão MAIS ICONIC da sua vida! ✨🌸💖
             </p>
 <div class="flex gap-4 text-4xl my-4">
 <span>🎀</span>
@@ -304,5 +315,4 @@ Your browser does not support the audio element.
 </div>
 </div>
 </body>
-
 </html>

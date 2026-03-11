@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Parabéns por colocar o DIU - Capa</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Pacifico&amp;family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        /* Custom Styles for Cringe Aesthetic */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFC0CB; /* Pink background instead of gradient */
+            overflow-x: hidden;
+        }
+
+        .slide-container {
+            width: min(100%, 1280px);
+            min-height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #FFB6C1;
+            background-image: url("https://page.gensparksite.com/slides_images/549c024a4af2e1e0ff4c7adc2a71db9c.png"); /* Subtle texture */
+            overflow: hidden;
+            border: 20px solid #FF69B4;
+            box-sizing: border-box;
+        }
+
+        /* Responsive scaling */
+        .content-box {
+            padding: clamp(24px, 5vw, 60px);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+        }
+
+        .subtitle {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .cat-img {
+            width: clamp(100px, 15vw, 180px);
+        }
+
+        .flower-corner {
+            font-size: clamp(4rem, 12vw, 8rem);
+        }
+
+        .heart {
+            font-size: clamp(1.5rem, 5vw, 2rem);
+        }
+
+        .star {
+            font-size: clamp(1rem, 4vw, 1.5rem);
+        }
+
+        .cta-text {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            padding: clamp(8px, 2.5vw, 16px) clamp(16px, 4vw, 30px);
+        }
+
+        @media (max-width: 768px) {
+            .slide-container {
+                border-width: 12px;
+            }
+
+            .content-box {
+                border-width: 4px;
+            }
+
+            .flower-corner {
+                opacity: 0.7;
+            }
+
+            .cat-left {
+                left: 10px;
+                bottom: 10px;
+            }
+
+            .cat-right {
+                right: 10px;
+                top: 10px;
+            }
+
+            .heart,
+            .star {
+                animation-duration: 3.5s;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .slide-container {
+                border-width: 10px;
+                padding: 10px;
+            }
+
+            .content-box {
+                padding: 16px 16px;
+            }
+
+            .content-box h1 {
+                line-height: 1.1;
+            }
+
+            .flex {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .cat-img {
+                display: none;
+            }
+
+            .flower-corner {
+                display: none;
+            }
+        }
+
+        /* Decorative Background Elements */
+        .decoration {
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        /* Floating Hearts Animation */
+        @keyframes floatHeart {
+            0% { transform: translateY(0) scale(1); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+        }
+
+        .heart {
+            position: absolute;
+            color: #FF1493;
+            animation: floatHeart 4s infinite ease-in-out;
+            z-index: 5;
+        }
+
+        /* Glitter Effect */
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .star {
+            position: absolute;
+            color: #FFD700;
+            animation: twinkle 2s infinite ease-in-out;
+            z-index: 2;
+        }
+
+        /* Main Content Box */
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            text-align: center;
+            border: 5px dashed #FF1493;
+            box-shadow: 0 10px 25px rgba(255, 20, 147, 0.5);
+            z-index: 10;
+            position: relative;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #FF1493;
+            text-shadow: 3px 3px 0px #FFC0CB, 5px 5px 0px #FFFFFF;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            transform: rotate(-2deg);
+        }
+
+        .subtitle {
+            font-family: 'Dancing Script', cursive;
+            color: #C71585;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .cat-img,
+        .user-photo {
+            width: clamp(110px, 18vw, 180px);
+            height: auto;
+            position: absolute;
+            z-index: 20;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .cat-left,
+        .photo-left {
+            bottom: clamp(10px, 5vh, 20px);
+            left: clamp(10px, 5vw, 50px);
+            transform: rotate(-15deg);
+        }
+
+        .cat-right,
+        .photo-right {
+            top: clamp(10px, 5vh, 20px);
+            right: clamp(10px, 5vw, 50px);
+            transform: rotate(15deg);
+        }
+
+        .flower-corner {
+            position: absolute;
+            color: #FF69B4;
+            z-index: 5;
+            opacity: 0.8;
+        }
+
+        .flower-tl { top: -40px; left: -40px; transform: rotate(-45deg); }
+        .flower-tr { top: -40px; right: -40px; transform: rotate(45deg); }
+        .flower-bl { bottom: -40px; left: -40px; transform: rotate(-135deg); }
+        .flower-br { bottom: -40px; right: -40px; transform: rotate(135deg); }
+
+        .cta-text {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FF69B4;
+            color: white;
+            border-radius: 50px;
+            margin-top: 20px;
+            border: 3px solid #FFFFFF;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.6);
+            font-weight: bold;
+        }
+
+        /* Pulse animation for CTA */
+        @keyframes pulse-cringe {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-anim {
+            animation: pulse-cringe 1.5s infinite;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Corner Flowers -->
+<div class="flower-corner flower-tl">🌺</div>
+<div class="flower-corner flower-tr">🌸</div>
+<div class="flower-corner flower-bl">🌹</div>
+<div class="flower-corner flower-br">🌷</div>
+<!-- Floating Hearts (Static position for export consistency, animation in browser) -->
+<div class="heart" style="top: 10%; left: 20%; animation-delay: 0s;">💖</div>
+<div class="heart" style="top: 20%; left: 80%; animation-delay: 1s;">💗</div>
+<div class="heart" style="top: 80%; left: 15%; animation-delay: 2s;">💓</div>
+<div class="heart" style="top: 70%; left: 85%; animation-delay: 0.5s;">💕</div>
+<div class="heart" style="top: 5%; left: 50%; animation-delay: 1.5s;">💝</div>
+<div class="heart" style="top: 90%; left: 50%; animation-delay: 2.5s;">💘</div>
+<!-- Twinkling Stars -->
+<div class="star" style="top: 15%; left: 10%;">✨</div>
+<div class="star" style="top: 25%; left: 90%; animation-delay: 0.5s;">🌟</div>
+<div class="star" style="top: 75%; left: 5%; animation-delay: 1s;">✨</div>
+<div class="star" style="top: 85%; left: 95%; animation-delay: 1.5s;">🌟</div>
+<div class="star" style="top: 50%; left: 5%;">✨</div>
+<div class="star" style="top: 50%; left: 95%;">✨</div>
+<!-- Cute Kittens Images (using placeholders that look like stickers) -->
+<img alt="Gatinho fofo" class="cat-img cat-left" src="https://page.gensparksite.com/slides_images/2317b254fc5ec0d459123a4d71da8d91.webp" />
+<img alt="Gatinho piscando" class="cat-img cat-right" src="https://page.gensparksite.com/slides_images/82bcbc7dff4adc48e3bcd224d1304697.webp" />
+<!-- Seus uploads (adicione photo1.jpg e photo2.jpg na mesma pasta) -->
+<img alt="Foto 1" class="user-photo photo-left" src="photo1.jpg" />
+<img alt="Foto 2" class="user-photo photo-right" src="photo2.jpg" />
+<div class="content-box">
+<h1>🎉💖 PARABÉNS<br/>POR COLOCAR O DIU LETICIA! 💖🎉</h1>
+<p class="subtitle">
+                Uma celebração para a decisão MAIS ICONIC da sua vidaaaaaaa! ✨🌸💖
+            </p>
+<div class="flex gap-4 text-4xl my-4">
+<span>🎀</span>
+<span>😻</span>
+<span>💊</span>
+<span>💃</span>
+<span>👑</span>
+</div>
+<p class="cta-text pulse-anim">
+                Hoje a estrela é você! Prepare o brilho, o laço e o miado: a festa começou! 🎀😻🎊
+            </p>
+</div>
+</div>
+</body>
+</html>

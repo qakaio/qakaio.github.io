@@ -1279,3 +1279,18 @@ svg.proj-link-icon {
   height: 1.25rem;
 }
 
+/* Spinner rotation animation for loading button */
+.anim-rotate {
+  animation: rotate 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

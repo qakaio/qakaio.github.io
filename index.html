@@ -1,259 +1,872 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Kaio Garcia - Senior QA Engineer</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💙</text></svg>">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Kaio Garcia | Senior QA Engineer & Quality Engineering Leader</title>
+  <meta name="description" content="Senior QA Engineer & Quality Engineering Leader with 10+ years of experience building scalable test automation frameworks, CI/CD quality gates, and test strategies. Explore my portfolio and expertise.">
+  <meta name="keywords" content="Kaio Garcia, QA Engineer, Senior QA, Test Automation, Playwright, Cypress, Selenium, JMeter, CI/CD, Contract Testing">
+  <meta name="author" content="Kaio Garcia">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qakaio.github.io/">
+  <meta property="og:title" content="Kaio Garcia | Senior QA Engineer & Quality Engineering Leader">
+  <meta property="og:description" content="10+ years building scalable automation frameworks, CI/CD quality gates, and performance engineering pipelines.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/38477535?v=4">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://qakaio.github.io/">
+  <meta property="twitter:title" content="Kaio Garcia | Senior QA Engineer & Quality Engineering Leader">
+  <meta property="twitter:description" content="10+ years building scalable automation frameworks, CI/CD quality gates, and performance engineering pipelines.">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/38477535?v=4">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <main>
-    <section class="card" aria-label="Profile card">
-      <img class="profile-pic" src="https://qakaio.github.io/PixelPortrait2025.png" alt="Kaio Garcia portrait" />
-      <header>
-        <h1>Kaio Garcia</h1>
-        <h2>Senior QA Engineer |  Engineer</h2>
-      </header>
-      <p>10+ years building scalable test automation frameworks, CI/CD quality gates, and test strategies that prevent defects instead of just finding them. Open to Senior IC roles — Remote (Global).</p>
-      <nav class="buttons" aria-label="Primary actions">
-        <a class="btn btn-primary" href="mailto:kaioqa@protonmail.com">Get in touch</a>
-        <a class="btn" href="https://github.com/qakaio" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+
+  <!-- Background Glowing Elements -->
+  <div class="radial-glows" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo" aria-label="Kaio Garcia Portfolio Home">
+        KAIO GARCIA <span class="logo-dot"></span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link" id="link-about">About</a>
+        <a href="#stack" class="nav-link" id="link-stack">Expertise</a>
+        <a href="#portfolio" class="nav-link" id="link-portfolio">Projects</a>
+        <a href="#experience" class="nav-link" id="link-experience">Education</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
       </nav>
-      <div class="icons">
-        <a href="mailto:kaioqa@protonmail.com" aria-label="Send email"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com/in/kaioqa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/qakaio" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
-      </div>
-    </section>
 
-    <section class="card" aria-label="Featured Projects">
-      <header>
-        <h2>Featured Projects</h2>
-        <p>Open-source QA automation portfolio — all CI/CD passing.</p>
-      </header>
-      <div class="projects-grid">
-        <article class="project-card">
-          <header class="project-header">
-            <h3><a href="https://github.com/qakaio/Kaio-QA-portfolio-playwright" target="_blank" rel="noopener noreferrer">Playwright + JS Automation</a></h3>
-            <span class="badge">26 tests</span>
-          </header>
-          <p>Complete E2E suite for AutomationExercise e-commerce. Page Objects, API testing, Cloudflare skip logic, HTML reports, GitHub Pages deploy.</          <footer class="project-meta">
-            <span class="tech">JavaScript</span>
-            <span class="tech">Playwright</span>
-            <span class="tech">GitHub Actions</span>
-          </footer>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3><a href="https://github.com/qakaio/Kaio-QA-portfolio-API-testing" target="_blank" rel="noopener noreferrer">API Testing + Contract</a></h3>
-            <span class="badge">57 tests</span>
-          </header>
-          <p>Playwright + TypeScript API testing against JSONPlaceholder. CRUD, schema validation, Postman collection, ESLint v9 flat config.</          <footer class="project-meta">
-            <span class="tech">TypeScript</span>
-            <span class="tech">Playwright</span>
-            <span class="tech">Postman</span>
-          </footer>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3><a href="https://github.com/qakaio/Kaio-QA-portfolio-selenium" target="_blank" rel="noopener noreferrer">Selenium WebDriver + JS</a></h3>
-            <span class="badge">15+ tests</span>
-          </header>
-          <p>SauceDemo E2E with Page Object Model, Mocha + Chai, Chrome headless CI, data-driven tests, screenshots on failure.</          <footer class="project-meta">
-            <span class="tech">JavaScript</span>
-            <span class="tech">Selenium</span>
-            <span class="tech">Mocha/Chai</span>
-          </footer>
-        </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3><a href="https://github.com/qakaio/Kaio-QA-portfolio-performance-test-jmeter" target="_blank" rel="noopener noreferrer">JMeter Performance Testing</a></h3>
-            <span class="badge">5 plans</span>
-          </header>
-          <p>Load/stress/spike/soak tests for JSONPlaceholder API. HTML dashboards, SLI/SLO baselines, GitHub Actions CI, Jenkins pipeline ready.
+      <div class="nav-actions">
+        <!-- Light/Dark Theme Switcher -->
+        <button class="theme-toggle" id="theme-switcher-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon"></i>
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+
+        <!-- Hamburger Icon for Mobile Menu -->
+        <button class="hamburger" id="mobile-menu-btn" aria-label="Open Navigation Menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-status-badge">
+          <span class="hero-badge-dot"></span> Open to Roles & Projects
+        </div>
+        <h1 class="hero-title" id="main-hero-heading">Hi, I'm <span>Kaio Garcia</span></h1>
+        <h2 class="hero-subtitle">Senior QA Engineer & Quality Engineering Leader</h2>
+        <p class="hero-description">
+          Building scalable test automation frameworks, CI/CD quality gates, and high-performance strategies that prevent defects instead of just finding them. 10+ years of driving engineering velocity with quality-first principles.
+        </p>
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn btn-primary" id="hero-cta-portfolio">
+            <i data-lucide="terminal"></i> Explore Work
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+            <i data-lucide="mail"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="avatar-bg-glow"></div>
+        <div class="avatar-frame">
+          <img src="https://avatars.githubusercontent.com/u/38477535?v=4" alt="Kaio Garcia Profile Avatar" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & PILLARS SECTION
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <!-- Aristotle Quote Card -->
+      <div class="glass-card quote-card" id="aristotle-quote">
+        <div class="quote-icon" aria-hidden="true">
+          <i data-lucide="quote"></i>
+        </div>
+        <blockquote class="quote-text">
+          "Quality is not an act, it's a habit."
+        </blockquote>
+        <cite class="quote-author">— Aristotle</cite>
+      </div>
+
+      <div class="section-header">
+        <span class="section-tag">Core Value</span>
+        <h2 class="section-title">What I Do</h2>
+      </div>
+
+      <!-- Core QA Pillars -->
+      <div class="pillars-grid" id="pillars-container">
+        <!-- Pillar 1 -->
+        <div class="glass-card pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3 class="pillar-title">Framework Architecture</h3>
+          <p class="pillar-desc">Designing scalable, maintainable test frameworks from scratch using Playwright, Cypress, Selenium, Appium, and WebdriverIO.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="glass-card pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="pillar-title">Contract Testing</h3>
+          <p class="pillar-desc">Implementing Pact contract validations and automated Schemathesis schemas to secure integration layers and prevent regressions.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="glass-card pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="cpu"></i>
+          </div>
+          <h3 class="pillar-title">CI/CD Quality Gates</h3>
+          <p class="pillar-desc">Configuring build gates (Lint → Unit → Contract → Integration → E2E → Load) using GitHub Actions, GitLab CI, and Docker.</p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="glass-card pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="activity"></i>
+          </div>
+          <h3 class="pillar-title">Performance Engineering</h3>
+          <p class="pillar-desc">Conducting JMeter and k6 load tests, baseline creation, and monitoring metrics with Grafana/Prometheus to satisfy SLIs/SLOs.</p>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="glass-card pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="lock"></i>
+          </div>
+          <h3 class="pillar-title">Security Testing</h3>
+          <p class="pillar-desc">Validating APIs and web layers against OWASP Top 10 vulnerabilities via OWASP ZAP, manual pentesting, and SQLi proof-of-concepts.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECH STACK SECTION (FILTERABLE)
+       ========================================================================== -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills Inventory</span>
+        <h2 class="section-title">Tech Stack & Expertise</h2>
+      </div>
+
+      <div class="stack-layout">
+        <!-- Sidebar filters -->
+        <aside class="stack-categories" aria-label="Filter Stack Categories">
+          <button class="stack-cat-btn active" data-filter="all" id="btn-stack-all">
+            All Technologies <span class="stack-count" id="count-all">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="automation" id="btn-stack-automation">
+            Test Automation <span class="stack-count" id="count-automation">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="api" id="btn-stack-api">
+            API & Contract <span class="stack-count" id="count-api">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="performance" id="btn-stack-performance">
+            Performance & Load <span class="stack-count" id="count-performance">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="mobile" id="btn-stack-mobile">
+            Mobile Testing <span class="stack-count" id="count-mobile">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="security" id="btn-stack-security">
+            Security Testing <span class="stack-count" id="count-security">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="cicd" id="btn-stack-cicd">
+            CI/CD & Docker <span class="stack-count" id="count-cicd">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="languages" id="btn-stack-languages">
+            Languages <span class="stack-count" id="count-languages">0</span>
+          </button>
+          <button class="stack-cat-btn" data-filter="gamedev" id="btn-stack-gamedev">
+            Game Dev / Testing <span class="stack-count" id="count-gamedev">0</span>
+          </button>
+        </aside>
+
+        <!-- Dynamic Grid of Visual Chips -->
+        <div class="stack-grid" id="stack-chips-grid">
+          <!-- Automation -->
+          <div class="glass-card stack-item" data-cat="automation">
+            <div class="stack-item-icon"><i data-lucide="laptop"></i></div>
+            <div class="stack-item-info"><h4>Playwright</h4><span>E2E & API Automation</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="automation">
+            <div class="stack-item-icon"><i data-lucide="code-2"></i></div>
+            <div class="stack-item-info"><h4>Cypress</h4><span>Frontend Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="automation">
+            <div class="stack-item-icon"><i data-lucide="globe"></i></div>
+            <div class="stack-item-info"><h4>Selenium</h4><span>Web Driver Standards</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="automation">
+            <div class="stack-item-icon"><i data-lucide="settings"></i></div>
+            <div class="stack-item-info"><h4>WebdriverIO</h4><span>Next-gen Test Runner</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="automation">
+            <div class="stack-item-icon"><i data-lucide="play-circle"></i></div>
+            <div class="stack-item-info"><h4>Robot Framework</h4><span>Keyword-driven Automation</span></div>
+          </div>
+
+          <!-- API & Contract -->
+          <div class="glass-card stack-item" data-cat="api">
+            <div class="stack-item-icon"><i data-lucide="repeat"></i></div>
+            <div class="stack-item-info"><h4>Pact</h4><span>Consumer-Driven Contract Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="api">
+            <div class="stack-item-icon"><i data-lucide="terminal"></i></div>
+            <div class="stack-item-info"><h4>Postman</h4><span>Manual & Scripted API Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="api">
+            <div class="stack-item-icon"><i data-lucide="file-json"></i></div>
+            <div class="stack-item-info"><h4>Schemathesis</h4><span>OpenAPI Schema Validation</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="api">
+            <div class="stack-item-icon"><i data-lucide="link"></i></div>
+            <div class="stack-item-info"><h4>REST Assured</h4><span>Java API Automation</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="api">
+            <div class="stack-item-icon"><i data-lucide="file-code"></i></div>
+            <div class="stack-item-info"><h4>SuperTest</h4><span>HTTP Assertions</span></div>
+          </div>
+
+          <!-- Performance & Load -->
+          <div class="glass-card stack-item" data-cat="performance">
+            <div class="stack-item-icon"><i data-lucide="bar-chart-3"></i></div>
+            <div class="stack-item-info"><h4>JMeter</h4><span>Enterprise Load Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="performance">
+            <div class="stack-item-icon"><i data-lucide="gauge"></i></div>
+            <div class="stack-item-info"><h4>k6</h4><span>Modern Load Testing as Code</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="performance">
+            <div class="stack-item-icon"><i data-lucide="trending-up"></i></div>
+            <div class="stack-item-info"><h4>LoadRunner</h4><span>Legacy Performance Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="performance">
+            <div class="stack-item-icon"><i data-lucide="compass"></i></div>
+            <div class="stack-item-info"><h4>Lighthouse</h4><span>Page Performance Metrics</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="performance">
+            <div class="stack-item-icon"><i data-lucide="area-chart"></i></div>
+            <div class="stack-item-info"><h4>Grafana & Prometheus</h4><span>Metrics Monitoring & Dashboards</span></div>
+          </div>
+
+          <!-- Mobile Testing -->
+          <div class="glass-card stack-item" data-cat="mobile">
+            <div class="stack-item-icon"><i data-lucide="smartphone"></i></div>
+            <div class="stack-item-info"><h4>Appium</h4><span>Native Mobile Automation</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="mobile">
+            <div class="stack-item-icon"><i data-lucide="monitor"></i></div>
+            <div class="stack-item-info"><h4>BrowserStack</h4><span>Cloud Device Lab Orchestration</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="mobile">
+            <div class="stack-item-icon"><i data-lucide="pocket"></i></div>
+            <div class="stack-item-info"><h4>TestFlight</h4><span>iOS Beta Distribution</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="mobile">
+            <div class="stack-item-icon"><i data-lucide="zap"></i></div>
+            <div class="stack-item-info"><h4>Detox</h4><span>Grey-Box Mobile Testing</span></div>
+          </div>
+
+          <!-- Security -->
+          <div class="glass-card stack-item" data-cat="security">
+            <div class="stack-item-icon"><i data-lucide="shield-alert"></i></div>
+            <div class="stack-item-info"><h4>OWASP ZAP</h4><span>Automated Vulnerability Scans</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="security">
+            <div class="stack-item-icon"><i data-lucide="search-code"></i></div>
+            <div class="stack-item-info"><h4>Burp Suite</h4><span>Manual Web Penetration Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="security">
+            <div class="stack-item-icon"><i data-lucide="database-backup"></i></div>
+            <div class="stack-item-info"><h4>SQLMap</h4><span>Injection Attack Exploitation PoCs</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="security">
+            <div class="stack-item-icon"><i data-lucide="bug"></i></div>
+            <div class="stack-item-info"><h4>DVWA</h4><span>Intentionally Vulnerable Lab Environment</span></div>
+          </div>
+
+          <!-- CI/CD & Docker -->
+          <div class="glass-card stack-item" data-cat="cicd">
+            <div class="stack-item-icon"><i data-lucide="git-branch"></i></div>
+            <div class="stack-item-info"><h4>GitHub Actions</h4><span>Modern CI/CD Workflows</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="cicd">
+            <div class="stack-item-icon"><i data-lucide="infinity"></i></div>
+            <div class="stack-item-info"><h4>GitLab CI</h4><span>Integrated Pipelines</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="cicd">
+            <div class="stack-item-icon"><i data-lucide="wrench"></i></div>
+            <div class="stack-item-info"><h4>Jenkins</h4><span>Automation Servers</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="cicd">
+            <div class="stack-item-icon"><i data-lucide="box"></i></div>
+            <div class="stack-item-info"><h4>Docker</h4><span>Containerization standards</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="cicd">
+            <div class="stack-item-icon"><i data-lucide="boxes"></i></div>
+            <div class="stack-item-info"><h4>Docker Compose</h4><span>Multi-Container Orchestration</span></div>
+          </div>
+
+          <!-- Languages -->
+          <div class="glass-card stack-item" data-cat="languages">
+            <div class="stack-item-icon"><i data-lucide="file-type-2"></i></div>
+            <div class="stack-item-info"><h4>TypeScript</h4><span>Strongly Typed JavaScript</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="languages">
+            <div class="stack-item-icon"><i data-lucide="hash"></i></div>
+            <div class="stack-item-info"><h4>JavaScript</h4><span>Dynamic Web Development</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="languages">
+            <div class="stack-item-icon"><i data-lucide="binary"></i></div>
+            <div class="stack-item-info"><h4>Python</h4><span>Automation scripts & Pytest</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="languages">
+            <div class="stack-item-icon"><i data-lucide="folder-code"></i></div>
+            <div class="stack-item-info"><h4>C#</h4><span>Unity Scripting & .NET Testing</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="languages">
+            <div class="stack-item-icon"><i data-lucide="database"></i></div>
+            <div class="stack-item-info"><h4>SQL</h4><span>Data Assertions & Manipulation</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="languages">
+            <div class="stack-item-icon"><i data-lucide="chevron-right"></i></div>
+            <div class="stack-item-info"><h4>Bash</h4><span>Pipeline scripting</span></div>
+          </div>
+
+          <!-- Game Dev -->
+          <div class="glass-card stack-item" data-cat="gamedev">
+            <div class="stack-item-icon"><i data-lucide="gamepad-2"></i></div>
+            <div class="stack-item-info"><h4>Unity</h4><span>2D/3D Indie Development</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="gamedev">
+            <div class="stack-item-icon"><i data-lucide="toy-brick"></i></div>
+            <div class="stack-item-info"><h4>Unreal Engine</h4><span>Blueprints & Game Systems</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="gamedev">
+            <div class="stack-item-icon"><i data-lucide="swatch-book"></i></div>
+            <div class="stack-item-info"><h4>Godot</h4><span>Open-source game engine</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="gamedev">
+            <div class="stack-item-icon"><i data-lucide="sword"></i></div>
+            <div class="stack-item-info"><h4>Game Design</h4><span>Level Design & GameJams</span></div>
+          </div>
+          <div class="glass-card stack-item" data-cat="gamedev">
+            <div class="stack-item-icon"><i data-lucide="target"></i></div>
+            <div class="stack-item-info"><h4>Bughunter</h4><span>QA Playtesting & Defect Discovery</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFOLIO (PROJECTS) SECTION
+       ========================================================================== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">Featured Portfolio Repositories</h2>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- Project 1 -->
+        <article class="glass-card project-card">
+          <div class="project-badge-row">
+            <span class="project-type">E2E Automation</span>
+            <div class="ci-badge" title="GitHub Actions CI Build Status">
+              <img src="https://github.com/qakaio/Kaio-QA-portfolio-playwright/actions/workflows/playwright.yml/badge.svg" alt="CI Status Build Badge">
+            </div>
+          </div>
+          <h3 class="project-title">Kaio-QA-portfolio-playwright</h3>
+          <p class="project-desc">
+            Complete Playwright + JS automation framework featuring Page Object Models (POM), custom HTML reporters, global setup/cleanup, parallel test execution, and CI/CD pipelines targeting the AutomationExercise demo e-commerce site.
           </p>
-          <footer class="project-meta">
-            <span class="tech">JMeter</span>
-            <span class="tech">k6</span>
-            <span class="tech">Grafana</span>
-          </footer>
+          <div class="project-tech">
+            <span class="tech-tag">Playwright</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">GitHub Actions</span>
+            <span class="tech-tag">POM</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/qakaio/Kaio-QA-portfolio-playwright" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-playwright Source Code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github proj-link-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+            </a>
+            <a href="https://qakaio.github.io/Kaio-QA-portfolio-playwright/index.html" target="_blank" rel="nofollow noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-playwright Live Test Report">
+              <i data-lucide="external-link" class="proj-link-icon"></i> HTML Report
+            </a>
+          </div>
         </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3><a href="https://github.com/qakaio/Kaio-QA-portfolio-pentest-dvwa-sql-injection" target="_blank" rel="noopener noreferrer">DVWA SQL Injection Pentest</a></h3>
-            <span class="badge">Python</span>
-          </header>
-          <p>UNION-based SQL injection on local DVWA. Boolean/UNION exploitation, Python PoC, OWASP ASVS remediation guide, evidence screenshots.
+
+        <!-- Project 2 -->
+        <article class="glass-card project-card">
+          <div class="project-badge-row">
+            <span class="project-type">API Testing</span>
+            <div class="ci-badge" title="GitHub Actions CI Build Status">
+              <img src="https://github.com/qakaio/Kaio-QA-portfolio-API-testing/actions/workflows/api-tests.yml/badge.svg" alt="CI Status Build Badge">
+            </div>
+          </div>
+          <h3 class="project-title">Kaio-QA-portfolio-API-testing</h3>
+          <p class="project-desc">
+            API validation suite written in Playwright and TypeScript with Postman verification scripts, performing automated CRUD operations and JSON schema validation against the public JSONPlaceholder API.
           </p>
-          <footer class="project-meta">
-            <span class="tech">Python</span>
-            <span class="tech">OWASP ZAP</span>
-            <span class="tech">SQLMap</span>
-          </footer>
+          <div class="project-tech">
+            <span class="tech-tag">Playwright</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">JSON Schema</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/qakaio/Kaio-QA-portfolio-API-testing" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-API-testing Source Code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github proj-link-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+            </a>
+          </div>
         </article>
-        <article class="project-card">
-          <header class="project-header">
-            <h3><a href="https://github.com/qakaio/Kaio-QA-portfolio-playwright-AI-testing" target="_blank" rel="noopener noreferrer">AI-Powered Playwright Testing</a></h3>
-            <span class="badge">19 tests</span>
-          </header>
-          <p>Groq AI (llama-3.3-70b) for selector generation, test data, failure analysis, self-healing selectors, visual validation. Pytest + Playwright.
+
+        <!-- Project 3 -->
+        <article class="glass-card project-card">
+          <div class="project-badge-row">
+            <span class="project-type">AI-Powered QA</span>
+            <div class="ci-badge" title="GitHub Actions CI Build Status">
+              <img src="https://github.com/qakaio/Kaio-QA-portfolio-playwright-AI-testing/actions/workflows/ai-tests.yml/badge.svg" alt="CI Status Build Badge">
+            </div>
+          </div>
+          <h3 class="project-title">Kaio-QA-portfolio-playwright-AI-testing</h3>
+          <p class="project-desc">
+            Experimental framework implementing Groq AI and LLM APIs to generate dynamic test selectors, generate smart mock data, analyze test failures automatically, and offer self-healing script capabilities.
           </p>
-          <footer class="project-meta">
-            <span class="tech">Python</span>
-            <span class="tech">Playwright</span>
-            <span class="tech">Groq AI</span>
-          </footer>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Playwright</span>
+            <span class="tech-tag">Groq AI</span>
+            <span class="tech-tag">Pytest</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/qakaio/Kaio-QA-portfolio-playwright-AI-testing" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-playwright-AI-testing Source Code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github proj-link-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="glass-card project-card">
+          <div class="project-badge-row">
+            <span class="project-type">Web UI automation</span>
+            <div class="ci-badge" title="GitHub Actions CI Build Status">
+              <img src="https://github.com/qakaio/Kaio-QA-portfolio-selenium/actions/workflows/selenium.yml/badge.svg" alt="CI Status Build Badge">
+            </div>
+          </div>
+          <h3 class="project-title">Kaio-QA-portfolio-selenium</h3>
+          <p class="project-desc">
+            Solid architectural demonstration using JavaScript, Mocha, and Chai to run automated tests with vanilla Selenium WebDriver on the standard SauceDemo benchmark portal.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Selenium</span>
+            <span class="tech-tag">Mocha</span>
+            <span class="tech-tag">Chai</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/qakaio/Kaio-QA-portfolio-selenium" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-selenium Source Code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github proj-link-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="glass-card project-card">
+          <div class="project-badge-row">
+            <span class="project-type">Performance</span>
+            <div class="ci-badge" title="GitHub Actions CI Build Status">
+              <img src="https://github.com/qakaio/Kaio-QA-portfolio-performance-test-jmeter/actions/workflows/jmeter.yml/badge.svg" alt="CI Status Build Badge">
+            </div>
+          </div>
+          <h3 class="project-title">Kaio-QA-portfolio-performance-test-jmeter</h3>
+          <p class="project-desc">
+            Automated JMeter XML load testing suites integrating performance baseline monitoring, throughput validations, error threshold gates, and comprehensive HTML reporting.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">JMeter</span>
+            <span class="tech-tag">XML</span>
+            <span class="tech-tag">Performance</span>
+            <span class="tech-tag">Load Testing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/qakaio/Kaio-QA-portfolio-performance-test-jmeter" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-performance-test-jmeter Source Code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github proj-link-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="glass-card project-card">
+          <div class="project-badge-row">
+            <span class="project-type">Security / Pentest</span>
+            <div class="ci-badge" title="GitHub Actions CI Build Status">
+              <img src="https://github.com/qakaio/Kaio-QA-portfolio-pentest-dvwa-sql-injection/actions/workflows/pentest.yml/badge.svg" alt="CI Status Build Badge">
+            </div>
+          </div>
+          <h3 class="project-title">Kaio-QA-portfolio-pentest-dvwa-sql-injection</h3>
+          <p class="project-desc">
+            Vulnerability demonstration suite showing UNION-based SQL injections, manual PoCs written in Python, OWASP ZAP configurations, and developer remediation guidelines inside a DVWA environment.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">DVWA</span>
+            <span class="tech-tag">OWASP ZAP</span>
+            <span class="tech-tag">SQL Injection</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/qakaio/Kaio-QA-portfolio-pentest-dvwa-sql-injection" target="_blank" rel="noopener noreferrer" class="proj-link" aria-label="View Kaio-QA-portfolio-pentest-dvwa-sql-injection Source Code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github proj-link-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Code
+            </a>
+          </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card" aria-label="Tech Stack">
-      <header>
-        <h2>Tech Stack & Expertise</h2>
-      </header>
-      <div class="tech-grid">
-        <div class="tech-category">
-          <h3>Test Automation</h3>
-          <ul>
-            <li>Playwright</li>
-            <li>Cypress</li>
-            <li>Selenium</li>
-            <li>WebdriverIO</li>
-            <li>Appium</li>
-            <li>Robot Framework</li>
-          </ul>
+  <!-- ==========================================================================
+       EDUCATION & CERTIFICATIONS SECTION
+       ========================================================================== */
+  ========================================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Timeline</span>
+        <h2 class="section-title">Certifications & Education</h2>
+      </div>
+
+      <div class="timeline-wrapper" id="timeline-container">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2014</span>
+              <span class="timeline-provider">UNIGRANRIO</span>
+            </div>
+            <h3 class="timeline-title">Technology Degree in Digital Games Development</h3>
+            <p class="timeline-desc">Academic foundation covering game engines, level design principles, scripting systems, logic architectures, and QA playtesting methodologies.</p>
+          </div>
         </div>
-        <div class="tech-category">
-          <h3>API & Contract</h3>
-          <ul>
-            <li>Pact</li>
-            <li>Postman</li>
-            <li>Schemathesis</li>
-            <li>REST Assured</li>
-            <li>SuperTest</li>
-          </ul>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2022</span>
+              <span class="timeline-provider">Alura</span>
+            </div>
+            <h3 class="timeline-title">Test Planning and Bug Life Cycle</h3>
+            <p class="timeline-desc">Professional specialization focusing on test strategy definition, exploratory testing guidelines, bug prioritization, and defect life cycle administration.</p>
+          </div>
         </div>
-        <div class="tech-category">
-          <h3>Performance & Load</h3>
-          <ul>
-            <li>JMeter</li>
-            <li>k6</li>
-            <li>LoadRunner</li>
-            <li>Lighthouse</li>
-            <li>Grafana/Prometheus</li>
-          </ul>
-        </div>
-        <div class="tech-category">
-          <h3>Mobile Testing</h3>
-          <ul>
-            <li>Appium</li>
-            <li>BrowserStack</li>
-            <li>TestFlight</li>
-            <li>Detox</li>
-          </ul>
-        </div>
-        <div class="tech-category">
-          <h3>Security Testing</h3>
-          <ul>
-            <li>OWASP ZAP</li>
-            <li>Burp Suite</li>
-            <li>SQLMap</li>
-            <li>DVWA</li>
-          </ul>
-        </div>
-        <div class="tech-category">
-          <h3>CI/CD & Quality Gates</h3>
-          <ul>
-            <li>GitHub Actions</li>
-            <li>GitLab CI</li>
-            <li>Jenkins</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-        <div class="tech-category">
-          <h3>Languages</h3>
-          <ul>
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C#</li>
-            <li>SQL</li>
-            <li>Bash</li>
-          </ul>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2022</span>
+              <span class="timeline-provider">Alura</span>
+            </div>
+            <h3 class="timeline-title">Git and Github: Control and Share Your Code</h3>
+            <p class="timeline-desc">Deep dive covering standard git commands, branch orchestration, merge conflict resolution, collaboration strategies, and repository management.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card" aria-label="Experience">
-      <header>
-        <h2>Experience Highlights</h2>
-      </header>
-      <div class="experience-grid">
-        <article class="exp-card">
-          <header>
-            <h3>BuckSense</h3>
-            <span class="period">Jun 2024 – Present</span>
-          </header>
-          <ul>
-            <li>Architected Playwright + TS framework from scratch — 95% critical defect detection across 15+ microservices</li>
-            <li>CI/CD quality gates (lint → unit → integration → contract → e2e → performance) — 87% escaped defects reduction</li>
-            <li>Introduced Pact contract testing for 5 service boundaries — prevented 12+ breaking changes in 6 months</li>
-            <li>Regression suite 4h → 18min (parallel + smart selection); flaky test eradication 18% → <1%</li>
-          </ul>
-        </article>
-        <article class="exp-card">
-          <header>
-            <h3>Object Edge</h3>
-            <span class="period">Jul 2023 – Jan 2024</span>
-          </header>
-          <ul>
-            <li>WebdriverIO + Appium + BrowserStack (Web + Mobile) — coverage 45% → 75% in 4 months</li>
-            <li>Pact contract testing for 8 microservices — caught 8 breaking changes pre-merge</li>
-            <li>Jenkins → GitHub Actions + Docker — pipeline 45min → 12min</li>
-          </ul>
-        </article>
-        <article class="exp-card">
-          <header>
-            <h3>Upwork (Top Rated Plus)</h3>
-            <span class="period">Aug 2021 – Jun 2023</span>
-          </header>
-          <ul>
-            <li>19+ clients across SaaS, FinTech, HealthTech, E-commerce, Gaming</li>
-            <li>15+ test automation frameworks from scratch (Playwright, Cypress, Selenium, Appium)</li>
-            <li>Security testing: OWASP ZAP + manual pentesting for 8 FinTech/HealthTech clients</li>
-          </ul>
-        </article>
-        <article class="exp-card">
-          <header>
-            <h3>FXPS</h3>
-            <span class="period">Jan 2020 – Aug 2021</span>
-          </header>
-          <ul>
-            <li>Led 5-person QA team (hired 3, 100% retention, 3 promoted)</li>
-            <li>TestRail + Jira + Xray integration, 3 major releases</li>
-            <li>JMeter load testing 100k concurrent users; App Store rating 4.2 → 4.6</li>
-          </ul>
-        </article>
+  <!-- ==========================================================================
+       CONTACT & FOOTER SECTION
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Connect With Me</h2>
       </div>
-    </section>
 
-    <section class="card" aria-label="Certifications">
-      <header>
-        <h2>Certifications</h2>
-      </header>
-      <ul class="cert-list">
-        <li><strong>ISTQB Foundation Level (CTFL)</strong> — 2020</li>
-        <li><strong>ISTQB Test Automation Engineering (CT-TAE)</strong> — 2022</li>
-        <li><strong>Certified Agile Tester (CAT)</strong> — 2021</li>
-        <li><strong>AWS Cloud Practitioner</strong> — 2023</li>
-        <li><strong>Docker & Kubernetes Fundamentals</strong> — 2023</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    created with love by <a href="https://github.com/qakaio" target="_blank" rel="noopener noreferrer">@kaioqa 💙</a>
+      <div class="contact-grid">
+        <!-- Contact channels -->
+        <div class="contact-info" id="contact-details-list">
+          <a href="mailto:kaioqa@protonmail.com" class="glass-card contact-card" id="contact-card-email" aria-label="Send email to kaioqa@protonmail.com">
+            <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>kaioqa@protonmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/kaioqa" target="_blank" rel="noopener noreferrer" class="glass-card contact-card" id="contact-card-linkedin" aria-label="Visit Kaio Garcia's LinkedIn Profile">
+            <div class="contact-icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/kaioqa</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/qakaio" target="_blank" rel="noopener noreferrer" class="glass-card contact-card" id="contact-card-github" aria-label="Visit Kaio Garcia's GitHub Profile">
+            <div class="contact-icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <p>github.com/qakaio</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Custom message form -->
+        <form class="glass-card contact-form" id="quick-contact-form">
+          <div class="form-group">
+            <label for="form-name" class="form-label">Full Name</label>
+            <div class="input-icon-wrapper">
+              <input type="text" id="form-name" class="form-control" required placeholder="John Doe">
+              <i data-lucide="user" class="input-icon"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-email" class="form-label">Email Address</label>
+            <div class="input-icon-wrapper">
+              <input type="email" id="form-email" class="form-control" required placeholder="john@example.com">
+              <i data-lucide="mail" class="input-icon"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <div class="input-icon-wrapper">
+              <textarea id="form-message" class="form-control" required placeholder="Hi Kaio, let's collaborate on..."></textarea>
+              <i data-lucide="message-square" class="input-icon"></i>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;" id="form-submit-btn">
+            <i data-lucide="send"></i> Send Message
+          </button>
+          
+          <div class="form-status" id="form-status-banner" role="status">
+            <i data-lucide="check-circle-2"></i> Message sent successfully!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="site-footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        KAIO GARCIA <span class="logo-dot"></span>
+      </div>
+      <div class="footer-text">
+        &copy; <span id="current-year"></span> Kaio Garcia. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/qakaio" target="_blank" rel="noopener noreferrer" aria-label="Visit Kaio's GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+        <a href="https://linkedin.com/in/kaioqa" target="_blank" rel="noopener noreferrer" aria-label="Visit Kaio's LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+      </div>
+    </div>
   </footer>
+
+  <!-- ==========================================================================
+       INLINE JAVASCRIPT FOR DYNAMIC UTILITIES
+       ========================================================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set Current Year in Footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    /* ==========================================================================
+       THEME SWITCHER
+       ========================================================================== */
+    const themeBtn = document.getElementById('theme-switcher-btn');
+    const htmlElem = document.documentElement;
+
+    // Load theme from localStorage or default to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+      htmlElem.setAttribute('data-theme', savedTheme);
+    } else {
+      htmlElem.setAttribute('data-theme', systemPrefersDark ? 'dark' : 'light');
+    }
+
+    themeBtn.addEventListener('click', () => {
+      const currentTheme = htmlElem.getAttribute('data-theme');
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      htmlElem.setAttribute('data-theme', nextTheme);
+      localStorage.setItem('theme', nextTheme);
+    });
+
+    /* ==========================================================================
+       MOBILE MENU TOGGLE
+       ========================================================================== */
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile menu when clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ==========================================================================
+       TECH STACK FILTERING
+       ========================================================================== */
+    const stackBtns = document.querySelectorAll('.stack-cat-btn');
+    const stackItems = document.querySelectorAll('.stack-item');
+
+    // Count and update counts on sidebar categories
+    function updateStackCounts() {
+      // Total count
+      document.getElementById('count-all').textContent = stackItems.length;
+
+      // Category specific counts
+      const categories = ['automation', 'api', 'performance', 'mobile', 'security', 'cicd', 'languages', 'gamedev'];
+      categories.forEach(cat => {
+        const count = document.querySelectorAll(`.stack-item[data-cat="${cat}"]`).length;
+        const countElem = document.getElementById(`count-${cat}`);
+        if (countElem) {
+          countElem.textContent = count;
+        }
+      });
+    }
+
+    updateStackCounts();
+
+    stackBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active class on button
+        stackBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterVal = btn.getAttribute('data-filter');
+
+        // Toggle visibility of items
+        stackItems.forEach(item => {
+          const itemCat = item.getAttribute('data-cat');
+          if (filterVal === 'all' || itemCat === filterVal) {
+            item.style.display = 'flex';
+            // Trigger entry micro-animation
+            item.style.animation = 'none';
+            item.offsetHeight; // trigger reflow
+            item.style.animation = null;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    /* ==========================================================================
+       ACTIVE LINK HIGHLIGHT ON SCROLL
+       ========================================================================== */
+    const sections = document.querySelectorAll('section');
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '-30% 0px -60% 0px', // Trigger when section occupies main viewport space
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    /* ==========================================================================
+       CONTACT FORM SUBMISSION WITH BANNER SUCCESS
+       ========================================================================== */
+    const contactForm = document.getElementById('quick-contact-form');
+    const formStatus = document.getElementById('form-status-banner');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Get values for form submission validation/logging (for client demo)
+      const name = document.getElementById('form-name').value;
+      const email = document.getElementById('form-email').value;
+      const message = document.getElementById('form-message').value;
+
+      console.log('Sending Message:', { name, email, message });
+
+      // Trigger success state
+      formStatus.classList.add('success');
+
+      // Clear input fields
+      contactForm.reset();
+
+      // Auto hide success banner after 4 seconds
+      setTimeout(() => {
+        formStatus.classList.remove('success');
+      }, 4000);
+    });
+  </script>
 </body>
 </html>

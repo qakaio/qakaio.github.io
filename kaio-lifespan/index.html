@@ -14,6 +14,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background-color: #ffffff;
+            color: #000000;
             padding: 40px;
             display: flex;
             justify-content: center;
@@ -54,6 +55,39 @@
             color: #666666;
             font-weight: 400;
             letter-spacing: 0.3px;
+        }
+
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 12px;
+            z-index: 1000;
+        }
+
+        .toggle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            background-color: #ffffff;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            color: #333;
+        }
+
+        .toggle-btn:hover {
+            border-color: #999;
+            transform: scale(1.05);
+        }
+
+        .toggle-btn.active {
+            border-color: #78beff;
         }
 
         .grid-wrapper {
@@ -339,6 +373,16 @@
             body {
                 padding: 30px 20px;
             }
+            .controls {
+                top: 15px;
+                right: 15px;
+                gap: 10px;
+            }
+            .toggle-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
             .title {
                 font-size: 32px;
             }
@@ -358,6 +402,17 @@
         @media (max-width: 768px) {
             body {
                 padding: 24px 16px;
+            }
+            .controls {
+                top: 12px;
+                right: 12px;
+                gap: 8px;
+            }
+            .toggle-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 16px;
+                border-width: 1.5px;
             }
             .container {
                 max-width: 100%;
@@ -423,6 +478,17 @@
             body {
                 padding: 16px 12px;
                 min-height: auto;
+            }
+            .controls {
+                top: 10px;
+                right: 10px;
+                gap: 6px;
+            }
+            .toggle-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+                border-width: 1.5px;
             }
             .header {
                 margin-bottom: 18px;
@@ -507,6 +573,10 @@
     </style>
 </head>
 <body>
+    <div class="controls">
+        <button class="toggle-btn" id="langToggle" title="Toggle Language" aria-label="Toggle Language">🌐</button>
+    </div>
+
     <div class="container">
         <div class="header">
             <div class="title">MY LIFE IN WEEKS - KAIO GARCIA</div>
@@ -673,6 +743,122 @@
             item.innerHTML = '<div class="reflection-text">' + reflection.text + '</div>';
             reflectionsGrid.appendChild(item);
         });
+
+        // ===== LANGUAGE & DARK MODE TOGGLE =====
+        const translations = {
+            en: {
+                pageTitle: "MY LIFE IN WEEKS - KAIO GARCIA",
+                dateRange: "September 3, 1993 → September 3, 2063",
+                subtitle: "70 years • 3,640 weeks",
+                lived: "LIVED",
+                currentWeek: "CURRENT WEEK",
+                remaining: "REMAINING",
+                footerText: "Time is finite. Every square is a real piece of your life.",
+                considerThis: "Consider This",
+                birthdays: "You have approximately {X} more birthdays.",
+                summers: "You have approximately {X} more summers.",
+                watchGrow: "You have approximately {X} more years to watch those you love grow.",
+                christmases: "You have approximately {X} more Christmases with the people you love.",
+                trips: "If you travel once every 3 years, you have approximately {X} more trips.",
+                seeLoved: "If you see someone you love once a week, you have approximately {X} more times to see them.",
+                books: "If you read one book a month, you have approximately {X} more books to read.",
+                vacations: "If you take one vacation every year, you have approximately {X} more vacations.",
+                newYears: "You have approximately {X} more New Year's Eves.",
+                weekends: "You have approximately {X} more weekends.",
+                mornings: "You have approximately {X} more mornings.",
+                chances: "You have approximately {X} more chances to start something you've been postponing."
+            },
+            pt: {
+                pageTitle: "MINHA VIDA EM SEMANAS - KAIO GARCIA",
+                dateRange: "3 de Setembro de 1993 → 3 de Setembro de 2063",
+                subtitle: "70 anos • 3.640 semanas",
+                lived: "VIVIDAS",
+                currentWeek: "SEMANA ATUAL",
+                remaining: "RESTANTES",
+                footerText: "O tempo é finito. Cada quadrado é uma verdadeira parte da sua vida.",
+                considerThis: "Considere Isto",
+                birthdays: "Você tem aproximadamente {X} aniversários a mais.",
+                summers: "Você tem aproximadamente {X} verões a mais.",
+                watchGrow: "Você tem aproximadamente {X} anos a mais para ver quem você ama crescer.",
+                christmases: "Você tem aproximadamente {X} Natais a mais com as pessoas que ama.",
+                trips: "Se você viaja uma vez a cada 3 anos, você tem aproximadamente {X} viagens a mais.",
+                seeLoved: "Se você vê alguém que ama uma vez por semana, você tem aproximadamente {X} vezes a mais para vê-los.",
+                books: "Se você lê um livro por mês, você tem aproximadamente {X} livros a mais para ler.",
+                vacations: "Se você tira uma férias a cada ano, você tem aproximadamente {X} férias a mais.",
+                newYears: "Você tem aproximadamente {X} reveillons a mais.",
+                weekends: "Você tem aproximadamente {X} fins de semana a mais.",
+                mornings: "Você tem aproximadamente {X} manhãs a mais.",
+                chances: "Você tem aproximadamente {X} chances a mais de começar algo que você vem adiando."
+            }
+        };
+
+        let currentLanguage = localStorage.getItem('language') || 'en';
+
+        // Apply language on page load
+        applyLanguage(currentLanguage);
+
+        function applyLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('language', lang);
+            const t = translations[lang];
+
+            document.querySelector('.title').textContent = t.pageTitle;
+            document.querySelector('.date-range').textContent = t.dateRange;
+            document.querySelector('.subtitle').textContent = t.subtitle;
+            document.querySelector('.footer-text').textContent = t.footerText;
+            document.querySelector('.reflections-title').textContent = t.considerThis;
+
+            const legendItems = document.querySelectorAll('.legend-item');
+            legendItems[0].querySelector('.legend-text').textContent = t.lived;
+            legendItems[1].querySelector('.legend-text').textContent = t.currentWeek;
+            legendItems[2].querySelector('.legend-text').textContent = t.remaining;
+
+            updateReflections(lang, t);
+            updateLangToggleButton();
+        }
+
+        function updateReflections(lang, t) {
+            const yearsRemaining = LIFESPAN_YEARS - Math.floor(currentWeekIndex / WEEKS_PER_YEAR);
+            const weeksRemaining = TOTAL_WEEKS - currentWeekIndex;
+            const daysRemaining = weeksRemaining * 7;
+
+            const reflectionsData = [
+                t.birthdays.replace('{X}', yearsRemaining),
+                t.summers.replace('{X}', yearsRemaining),
+                t.watchGrow.replace('{X}', yearsRemaining),
+                t.christmases.replace('{X}', yearsRemaining),
+                t.trips.replace('{X}', Math.floor(yearsRemaining / 3)),
+                t.seeLoved.replace('{X}', weeksRemaining),
+                t.books.replace('{X}', Math.floor(yearsRemaining * 12)),
+                t.vacations.replace('{X}', yearsRemaining),
+                t.newYears.replace('{X}', yearsRemaining),
+                t.weekends.replace('{X}', Math.floor(yearsRemaining * 52)),
+                t.mornings.replace('{X}', daysRemaining),
+                t.chances.replace('{X}', Math.floor(weeksRemaining / 4))
+            ];
+
+            const reflectionsGrid = document.getElementById('reflectionsGrid');
+            reflectionsGrid.innerHTML = '';
+            reflectionsData.forEach(text => {
+                const item = document.createElement('div');
+                item.className = 'reflection-item';
+                item.innerHTML = '<div class="reflection-text">' + text + '</div>';
+                reflectionsGrid.appendChild(item);
+            });
+        }
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
+            applyLanguage(currentLanguage);
+        }
+
+        function updateLangToggleButton() {
+            const btn = document.getElementById('langToggle');
+            btn.textContent = currentLanguage === 'en' ? '🇧🇷' : '🇺🇸';
+        }
+
+        // Event listeners
+        document.getElementById('langToggle').addEventListener('click', toggleLanguage);
     </script>
 </body>
 </html>

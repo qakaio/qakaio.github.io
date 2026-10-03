@@ -82,6 +82,7 @@ const translations = {
     'research.tool2': 'Design experimental',
     'research.tool3': 'Escrita científica',
     'research.tool4': 'Visualização de dados',
+    'research.tool5': 'Análise estatística',
 
     'education.label': 'Formação',
     'education.title': 'Educação & certificações',
@@ -191,6 +192,7 @@ const translations = {
     'research.tool2': 'Experimental design',
     'research.tool3': 'Scientific writing',
     'research.tool4': 'Data visualization',
+    'research.tool5': 'Statistical analysis',
 
     'education.label': 'Education',
     'education.title': 'Education & certifications',

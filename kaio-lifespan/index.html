@@ -580,10 +580,10 @@
 
     <div class="container">
         <div class="header">
-            <div class="title">MY LIFE IN WEEKS - KAIO GARCIA</div>
-            <div class="date-range">September 3, 1993 → September 3, 2063</div>
-            <div class="subtitle">70 years • 3,640 weeks</div>
-        </div>
+                    <div class="title">MY LIFE IN WEEKS - KAIO GARCIA</div>
+                    <div class="date-range" id="date-range">September 3, 1993 → September 3, 2063</div>
+                    <div class="subtitle" id="subtitle">70 years • 3,640 weeks</div>
+                </div>
 
         <div class="grid-wrapper">
             <div class="age-labels" id="ageLabels"></div>
@@ -618,8 +618,8 @@
 
     <script>
         const BIRTH_DATE = new Date('1993-09-03');
-        const CURRENT_DATE = new Date('2026-09-10');
-        const LIFESPAN_YEARS = 70;
+                const CURRENT_DATE = new Date();
+                const LIFESPAN_YEARS = 70;
         const WEEKS_PER_YEAR = 52;
         const TOTAL_WEEKS = LIFESPAN_YEARS * WEEKS_PER_YEAR;
 
@@ -632,7 +632,23 @@
         console.log(`Current week index (0-based): ${currentWeekIndex}`);
         console.log(`Total weeks: ${TOTAL_WEEKS}`);
 
-        // Generate age labels
+                // Calculate and display dynamic date range
+                const birthDateStr = BIRTH_DATE.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+                const currentDateStr = CURRENT_DATE.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+                const dateRangeElement = document.getElementById('date-range');
+                if (dateRangeElement) {
+                    dateRangeElement.textContent = `September 3, 1993 → ${currentDateStr}`;
+                }
+
+                // Calculate and display dynamic subtitle
+                const yearsLived = Math.floor(weeksPassed / 52);
+                const weeksLived = weeksPassed % 52;
+                const subtitleElement = document.getElementById('subtitle');
+                if (subtitleElement) {
+                    subtitleElement.textContent = `${yearsLived} years • ${TOTAL_WEEKS} weeks`;
+                }
+
+                // Generate age labels
         const ageLabelsContainer = document.getElementById('ageLabels');
         for (let i = 0; i < LIFESPAN_YEARS; i += 5) {
             const label = document.createElement('div');
